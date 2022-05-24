@@ -10,10 +10,14 @@
 </head>
 <body>
     <header>
-    <h1 class="welcome">Добро пожаловать! Этот тест поможет вам определиться с жизненной позицией!</h1>
-    <h2 class="about">Каждый человек думал о том, что если он станет хлебом, сможет ли он с этим жить. Этот тест поможет вам понять, насколько вы хлеб.</h2>
+        <h1 class="welcome">Добро пожаловать!</h1>
+        <h2 class="about">Этот сайт предназначен для прохождения опросов</h2>
+        <h2 id="guide">Ниже вы можете вставить собственный файл с вопросами:</h2>
+        <input id="fileInput" type="file" size="50" onchange="processFiles(this.files)">
+        
     </header>
     <div class="que">
+        <!-- <button id="start">Начать!</button> -->
         <h2 id="q"></h2>
         <button id="answ0"></button>
         <br>
@@ -27,7 +31,7 @@
         <br>
         <button id="end">Завершить</button>
     </div>
-
+    <div id="fileOutput"></div>
     <h1 id="perc"></h1>
 </body>
 </html>
